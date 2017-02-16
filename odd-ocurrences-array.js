@@ -51,13 +51,12 @@ function solution(A) {
 }
 
 function solution(A) {
-  const sorted = A.sort((a, b) => a - b)
-  let prev = sorted[0]
+  const sorted = [...A].sort((a, b) => a - b)
+  let prev = A[0]
   let occurrences = 0
   let result
 
   for (number of sorted) {
-    console.log(prev, number, occurrences);
     if (number !== prev && occurrences % 2 !== 0) {
       result = prev
       break
@@ -71,7 +70,7 @@ function solution(A) {
       occurrences += 1
     }
 
-    prev = number
+    result = prev = number
   }
 
   return result
