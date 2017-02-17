@@ -15,3 +15,6 @@ function solution(A, K) {
     return acc
   }, Array(len))
 }
+
+
+console.log(solution([1, 2, 3], 1))
